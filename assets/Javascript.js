@@ -4,13 +4,13 @@
 console.log(moment().format("HH:mm")); // Console logs date and time in 24 hour format
 
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyAMJVwgewkaFHYb_TpRBuoii6R9r3b8w3c",
-  authDomain: "todo-fc154.firebaseapp.com",
-  databaseURL: "https://todo-fc154.firebaseio.com",
-  projectId: "todo-fc154",
-  storageBucket: "todo-fc154.appspot.com",
-  messagingSenderId: "228287179446"
+  var config = {
+    apiKey: "AIzaSyAMJVwgewkaFHYb_TpRBuoii6R9r3b8w3c",
+    authDomain: "todo-fc154.firebaseapp.com",
+    databaseURL: "https://todo-fc154.firebaseio.com",
+    projectId: "todo-fc154",
+    storageBucket: "todo-fc154.appspot.com",
+    messagingSenderId: "228287179446"
 };
 firebase.initializeApp(config);
 
