@@ -5,12 +5,12 @@ console.log(moment().format("HH:mm")); // Console logs date and time in 24 hour 
 
 // Initialize Firebase
 var config = {
-	apiKey: "AIzaSyAitrNyAyEoM5Mo7cs5YaqPIdFo8HCbXsQ",
-    authDomain: "trainscheduler-ea83f.firebaseapp.com",
-    databaseURL: "https://trainscheduler-ea83f.firebaseio.com",
-    projectId: "trainscheduler-ea83f",
-    storageBucket: "trainscheduler-ea83f.appspot.com",
-    messagingSenderId: "679724840977"
+  apiKey: "AIzaSyAMJVwgewkaFHYb_TpRBuoii6R9r3b8w3c",
+  authDomain: "todo-fc154.firebaseapp.com",
+  databaseURL: "https://todo-fc154.firebaseio.com",
+  projectId: "todo-fc154",
+  storageBucket: "todo-fc154.appspot.com",
+  messagingSenderId: "228287179446"
 };
 firebase.initializeApp(config);
 
