@@ -1,4 +1,4 @@
-// Michael Osgood / Train Scheduler
+// Michael Osgood / To Do List
 
 // Console logs date and time in 24 hour format to verify that moment.js is working
 console.log(moment().format("HH:mm")); // Console logs date and time in 24 hour format
@@ -38,7 +38,7 @@ $("#addTrain").on("click", function(){
 
 	// Pushes our data to Firebase
 	database.ref().push(train);
-  alert("Train Added!");
+  alert("Task Added!");
   return false;
 });
 
