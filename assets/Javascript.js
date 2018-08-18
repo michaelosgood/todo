@@ -17,48 +17,41 @@ firebase.initializeApp(config);
 // Variable to reference the database
 var database = firebase.database();
 
-// Train Object
-var train = {
-	name: "",
-	destination: "",
-	time: "",
-	frequency: "",
+// To Do Object
+var tasks = {
+  name: "",
+  description: "",
+  deadline: "",
 }
 
-// Function to add train when button is clicked
-$("#addTrain").on("click", function(){
-	event.preventDefault(); // Prevents page from refreshing when button is clicked
-	console.log("Submit Button Clicked"); // Console Log the that button has been clicked
+// Function to Add Task when button is clicked
+$("#addTask").on("click", function(){
+  event.preventDefault();
+  console.log("Task Added Successfully!");
 
-	// Storing the data that the user inputs
-	train.name = $("#name-input").val().trim();
-	train.destination = $("#destination-input").val().trim();
-	train.time = moment($("#time-input").val().trim(), "HH:mm").subtract(10, "years").format("X");
-	train.frequency = $("#frequency-input").val().trim();
+  tasks.name = $("#name-input").val().trim();
+  tasks.description = $("#description-input").val().trim();
+  tasks.deadline = $("#deadline-input").val().trim();
 
-	// Pushes our data to Firebase
-	database.ref().push(train);
+  // Pushes our data to Firebase
+	database.ref().push(tasks);
   alert("Task Added!");
+
+  // Clears all of the text-boxes
+  $("#name-input").val("");
+  $("#description-input").val("");
+  $("#deadline-input").val("");
+    
   return false;
 });
 
-// Used to pull data from Firebase and display it on #trainTable
+// Used to pull data from Firebase and display it on #taskTable
 database.ref().on("child_added", function(snapshot) {
   var name = snapshot.val().name;
-    var destination = snapshot.val().destination;
-    var frequency = snapshot.val().frequency;
-    var time = snapshot.val().time;
+  var description = snapshot.val().description;
+  var deadline = snapshot.val().deadline;
 
-    var remainder = moment().diff(moment.unix(time),"minutes")%frequency;
-    var minutes = frequency - remainder;
-    var arrival = moment().add(minutes,"m").format("hh:mm A");
-
-    console.log(remainder);
-    console.log(minutes);
-    console.log(arrival);
-
-    $("#trainTable > tBody").append("<tr><td>"+name+"</td><td>"+destination+"</td><td>"+frequency+
-    "</td><td>"+arrival+"</td><td>"+minutes+"</td></tr>");
+  $("#taskTable > tBody").append("<tr><td>"+name+"</td><td>"+description+"</td><td>"+deadline+"</td></tr>");
 });
 
 // Clock Function
