@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<title>To Do</title>
   	<!-- Reset CSS--> 
-	<link rel="stylesheet" type="text/css" href="assets/Reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
 	<!-- Google Font-->
 	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
 	<!-- Bootstrap File -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   	<!-- CSS -->
-  	<link rel="stylesheet" type="text/css" href="assets/Style.css">
+  	<link rel="stylesheet" type="text/css" href="assets/style.css">
  	<!-- JQuery -->
  	<script src="https://code.jquery.com/jquery.js"></script>
  	<!-- Firebase -->
@@ -22,17 +22,22 @@
 
 <body>
 	<div id="wrapper" class="container-fluid">
-		
+		<!-- Clock -->
+		<div class="row">
+            <div class="col-12 text-center">
+                <div id="ClockDiv">
+                    <p>Current Time: <span id="clock"></span></p>
+                </div>
+            </div>
+        </div>
 		
 		<!-- Train Schedule Panel -->
 	    <div class="panel panel-heading-custom">
 			<!-- Header -->
-			<div class="panel-heading"><p>To Do List</p>
-			<!-- Clock -->
-			<div id="ClockDiv">
-				<p><span id="clock"></span></p>
-			</div></div>
-	    	<div id="trainDiv" class="panel-body">
+			<div class="panel-heading">
+                <p>To Do List</p>
+            </div>
+	    	<div class="panel-body">
 	    		<table id="taskTable" style="width:100%">
 	          		<tr>
 	            		<th><u>Task</u></th>
@@ -69,12 +74,12 @@
 	</div><!-- wrapper -->
 	
 	<footer>
-		<div class="container">
+		<div class="container-full">
 			Copyright &copy; 2018 Michael Osgood
 		</div>
 	</footer>
 	
 	<!-- JavaScript -->
-	<script type="text/javascript" src="assets/Javascript.js"></script>
+	<script type="text/javascript" src="assets/javascript.js"></script>
 </body>
 </html>
