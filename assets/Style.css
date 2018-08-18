@@ -38,49 +38,12 @@ body {
 .form-control {
 	background-color: #F8F8FF;
 }
-#ClockDiv {
-	width: 50%;
-	margin-left: 25%;
-}
 
 footer {
-	position:relative;
-	width:100%;
-	min-height: 40px;
 	font-size: 20px;
 	text-align: center;
 	background: #F8F8FF;
 	border-top: 1px solid #000000;
 	font-family: 'Limelight', cursive;
+	height: 60px;
   }
-
-/* Media Queries */
-@media only screen and (max-width: 868px) {
-	#wrapper {
-		font-size: 16px;
-		width: 100%;
-	}
-	h3 {
-		font-size: 20px;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	#wrapper {
-		font-size: 14px;
-		width: 100%;
-	}
-	.panel-heading {
-		font-size: 18px;
-	}
-}
-
-@media only screen and (max-width: 568px) {
-	#wrapper {
-		font-size: 12px;
-		width: 100%;
-	}
-	.panel-heading {
-		font-size: 16px;
-	}
-}
