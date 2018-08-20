@@ -10,6 +10,10 @@ body {
 	font-size: 18px;
 }
 
+.card{
+margin-bottom: 50px;
+}
+
 .btn {
 	background-color: #d3d3d3;
 	color: #000000;
@@ -25,5 +29,4 @@ footer {
 	background: #F8F8FF;
 	border-top: 1px solid #000000;
 	font-family: 'Limelight', cursive;
-	height: 60px;
   }
