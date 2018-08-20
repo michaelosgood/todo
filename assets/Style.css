@@ -4,7 +4,7 @@ body {
 	color: #000000;
 }
 
-.panel-heading {
+/* .panel-heading {
 	font-family: 'Limelight', cursive;
 	font-size: 22px;
 	border-width: 1px;
@@ -17,19 +17,21 @@ body {
 	background-color: #F8F8FF;
 	text-align: center;
 }
+
 .panel-body {
 	background-color:#F8F8FF;
 	border-width: 1px;
 	border-style: solid;
 	border-color: #000000;
 	text-align: center;
-}
+} */
 
 #wrapper {
 	width: 95%;
 	font-family: 'Limelight', cursive;
 	font-size: 18px;
 }
+
 .btn {
 	background-color: #d3d3d3;
 	color: #000000;
