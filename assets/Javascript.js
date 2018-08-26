@@ -46,12 +46,12 @@ $("#addTask").on("click", function(){
 });
 
 // Function to delete Task
-$('#deleteTask').on("click", function(){
-  console.log("Task Deleted Successfully!");
+// $('#deleteTask').on("click", function(){
+//   console.log("Task Deleted Successfully!");
 
-  database.ref().delete(tasks);
-  alert("Task Deleted")
-});
+//   database.ref().delete(tasks);
+//   alert("Task Deleted")
+// });
 
 // Used to pull data from Firebase and display it on #taskTable
 database.ref().on("child_added", function(snapshot) {
